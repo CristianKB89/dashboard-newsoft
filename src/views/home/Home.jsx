@@ -16,7 +16,6 @@ function Home() {
 
   return (
     <section className="Data-wrapper">
-      
       <div className="Detail-wrapper">
         <div className="last">
           <h3>Ultimo usuario registrado:</h3>
@@ -28,7 +27,7 @@ function Home() {
               </p>
               <p>Email: {lastUser?.email}</p>
               <p>Telefono: {lastUser?.user_phone}</p>
-              <p>Fecha de creación: </p>
+              <p>Fecha de registro: </p>
               <p>{lastUser?.created_at.substring(0, 10)}</p>
             </div>
           </div>
@@ -47,7 +46,6 @@ function Home() {
           </div>
         </div>
       </div>
-      <div className="Data-main">
         <article>
           <MouseIcon className="icon" />
           <h2>Total Productos:</h2>
@@ -63,7 +61,6 @@ function Home() {
           <h2>Total Categorias:</h2>
           <p className="numberCircle">{categories?.length}</p>
         </article>
-      </div>
       <section className="explore-product">
         {productCategory?.map((category, key = category.id) => {
           return (
