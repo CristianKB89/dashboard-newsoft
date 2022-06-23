@@ -41,7 +41,7 @@ function Home() {
               <p>Categoría: {lastProduct?.categories?.categories}</p>
               <p>Precio: ${lastProduct?.price}</p>
               <p>Fecha de creación: </p>
-              <p>{lastProduct?.created_at.substring(0, 10)}</p>
+              <p>{lastProduct?.created_at?.substring(0, 10)}</p>
             </div>
           </div>
         </div>
