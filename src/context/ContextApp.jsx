@@ -9,7 +9,7 @@ export const ContextAppProvider = (props) => {
   const [categories, setCategories] = useState([]);
 
   async function fetchProducts() {
-    const res = await fetch("https://newsoft-6.herokuapp.com/api/dashboard/products", {
+    const res = await fetch("http://localhost:3030/api/dashboard/products", {
       headers: {
         "Access-Control-Allow-Origin": "*",
         "Content-Type": "application/json",
@@ -20,7 +20,7 @@ export const ContextAppProvider = (props) => {
   }
 
   async function fetchUsers() {
-    const res = await fetch("https://newsoft-6.herokuapp.com/api/dashboard/users", {
+    const res = await fetch("http://localhost:3030/api/dashboard/users", {
       headers: {
         "Access-Control-Allow-Origin": "*",
         "Content-Type": "application/json",
@@ -31,7 +31,7 @@ export const ContextAppProvider = (props) => {
   }
 
   async function fetchCategories() {
-    const res = await fetch("https://newsoft-6.herokuapp.com/api/dashboard/categories", {
+    const res = await fetch("http://localhost:3030/api/dashboard/categories", {
       headers: {
         "Access-Control-Allow-Origin": "*",
         "Content-Type": "application/json",
@@ -43,7 +43,7 @@ export const ContextAppProvider = (props) => {
 
   async function fetchProductsCategory() {
     const res = await fetch(
-      "https://newsoft-6.herokuapp.com/api/products",
+      "http://localhost:3030/api/products",
       {
         headers: {
           "Access-Control-Allow-Origin": "*",
