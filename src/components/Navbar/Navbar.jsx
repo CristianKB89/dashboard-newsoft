@@ -12,22 +12,17 @@ function Navbar() {
     <nav className="appNavBar">
       <ul>
         <img className="logo" src={logo} alt="NewSoft" />
+        <img className="logo-solo" src="/img/logo-solo.png" alt="NewSoft" />
         <li>
           <Link className="link" to="/">
             <HomeIcon className="iconsStyle" />
-            Home
+            <p>Home</p>
           </Link>
         </li>
         <li>
           <Link className="link" to="/products">
             <MouseIcon className="iconsStyle" />
-            Productos
-          </Link>
-        </li>
-        <li>
-          <Link className="link" to="/">
-            <PersonIcon className="iconsStyle" />
-            Usuarios
+            <p>Productos</p>
           </Link>
         </li>
         {/* <li>

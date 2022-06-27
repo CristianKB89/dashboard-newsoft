@@ -2,7 +2,6 @@ import React, { createContext, useEffect, useState } from "react";
 
 export const ContextApp = createContext([]);
 export const ContextAppProvider = (props) => {
-  const [apiCall, setApiCall] = useState(false);
   const [products, setProducts] = useState([]);
   const [productsCategory, setproductsCategory] = useState([]);
   const [users, setUsers] = useState([]);
@@ -60,11 +59,11 @@ export const ContextAppProvider = (props) => {
     fetchUsers();
     fetchCategories();
     fetchProductsCategory();
-  }, [apiCall]);
+  }, []);
 
   return (
     <ContextApp.Provider
-      value={{ products, users, categories, productsCategory ,apiCall, setApiCall }}
+      value={{ products, users, categories, productsCategory  }}
     >
       {props.children}
     </ContextApp.Provider>
